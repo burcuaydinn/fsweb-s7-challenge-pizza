@@ -1,0 +1,135 @@
+.ana-sayfa-container {
+  max-width: px; /* Konteynır genişliği */
+  margin: 0 auto; /* Sayfayı merkezlemek için */
+  padding: 0px; /* Kenar boşlukları */
+}
+
+.banner-container {
+  width: 100vw; /* Sayfanın tam genişliğini kapla */
+  height: 100vh; /* Sayfanın tam yüksekliğini kapla */
+  position: fixed; /* Sabit konum */
+  top: 0; /* Sayfanın üstünden başla */
+  left: 0; /* Sayfanın solundan başla */
+  margin: 0; /* Margin'ı sıfırla */
+  padding: 0; /* Padding'i sıfırla */
+}
+
+.banner-container img {
+  width: 100%; /* Resmin genişliğini %100 yap */
+  height: 100%; /* Resmin yüksekliğini %100 yap */
+  object-fit: cover; /* Resmi container'a sığdır */
+}
+.logo-container {
+  position: absolute; /* Logoyu banner içindeki pozisyonunu belirlemek için */
+  top: 30px; /* Banner'ın üstünden 20px aşağıya gel */
+  left: 50%; /* Banner'ın genişliğinin yarısına gel */
+  transform: translateX(-50%); /* Logoyu yatay olarak merkezle */
+  z-index: 1; /* Logoyu bannerın üstüne getir */
+}
+.button-container {
+  position: absolute; /* Banner içindeki pozisyonunu belirlemek için */
+  top: 42%; /* Banner'ın yüksekliğinin yarısına gel */
+  left: 50%; /* Banner'ın genişliğinin yarısına gel */
+  transform: translate(-50%, -50%); /* Butonu dikey ve yatay olarak merkezle */
+}
+
+.custom-button {
+  background-color: #fdc913; /* Arka plan rengi */
+  color: black; /* Metin rengi */
+  padding: 10px 20px; /* Boşluklar */
+  font-size: 15px; /* Metin boyutu */
+  border: none; /* Kenarlık yok */
+  border-radius: 45px; /*Kenar yuvarlaklığı */
+  cursor: pointer; /* İmleç türü */
+}
+.grow-button {
+  padding: 30px 30px;
+  font-size: 16px;
+  background-color: #fdc913;
+  padding: 10px 20px;
+  color: black;
+  border: none;
+  border-radius: 35px;
+  cursor: pointer;
+  transition: transform 0.2s; /* Butonun büyüme süresini ayarlar */
+}
+
+.grow-button:hover {
+  transform: scale(1.2); /* Butonu %10 büyütür */
+}
+.text-container {
+  position: absolute; /* Metni banner içindeki pozisyonunu belirlemek için */
+  top: 160px; /* Metnin yüksekliği */
+  left: 50%; /* Banner'ın genişliğinin yarısına gel */
+  transform: translateX(-50%); /* Metni yatay olarak merkezle */
+  text-align: center; /* Metni ortala */
+  margin-bottom: 2rem;
+}
+
+.banner-text {
+  color: white; /* Metin rengi */
+  font-weight: 400;
+  font-size: 65px; /* Metin boyutu */
+  margin: 0; /* Kenar boşluğu sıfırla */
+  font-family: "Barlow", sans-serif;
+  top: 0;
+  transform: translateY(-50px);
+}
+
+.banner-subtext {
+  color: white; /* Metin rengi */
+  font-weight: 400;
+  font-size: 65px; /* Metin boyutu */
+  margin: 0; /* Kenar boşluğu sıfırla */
+  font-family: "Barlow", sans-serif;
+  transform: translateY(-65px);
+}
+.firsat {
+  text-align: center;
+  font-family: "Satisfy", cursive;
+  color: #ffd700;
+  font-size: 25px;
+  top: 0;
+  margin: 0;
+  left: 30%;
+  transform: translateY(-40px);
+}
+@media (max-width: 500px) {
+  .banner-text {
+    font-size: 30px;
+  }
+
+  .banner-subtext {
+    font-size: 30px;
+  }
+  .firsat {
+    font-size: 20px;
+  }
+}
+/* Tablet boyutları için */
+@media (max-width: 768px) {
+  .banner-text {
+    font-size: 30px;
+  }
+
+  .banner-subtext {
+    font-size: 30px;
+  }
+  .firsat {
+    font-size: 20px;
+  }
+}
+
+/* Telefon boyutları için */
+@media (max-width: 480px) {
+  .banner-text {
+    font-size: 30px;
+  }
+
+  .banner-subtext {
+    font-size: 30px;
+  }
+  .firsat {
+    font-size: 20px;
+  }
+}

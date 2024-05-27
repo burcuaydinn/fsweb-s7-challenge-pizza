@@ -1,0 +1,99 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: screen; /* Tailwind's h-screen */
+  background-color: #ce2829;
+  /* Custom red color, replace with your actual color */
+}
+
+.title {
+  font-family: "Satisfy", cursive; /* Custom font */
+  font-size: 1, 5rem; /* Tailwind's text-2xl */
+  color: #ffd700; /* Custom yellow color */
+  height: 70px;
+  text-align: center;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  transform: translateY(110px);
+  font-size: 25px;
+}
+
+.order-received {
+  font-size: 100px; /* Tailwind's lg:text-7xl */
+  margin-top: 100px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 1;
+  color: #f5f5dc;
+  transform: translateY(60px);
+
+  /* Tailwind's mt-4 */
+}
+
+hr {
+  color: white;
+  margin-top: 1.25rem; /* Tailwind's mt-5 */
+  font-weight: bold; /* Tailwind's font-bold */
+}
+
+/* Pizza description styling */
+.pizza-description {
+  color: #f5f5dc; /* Custom beige color */
+  margin-top: 1rem; /* Tailwind's mt-4 */
+  font-size: 1.5rem;
+  /* Tailwind's text-2xl */
+}
+
+/* Order details styling */
+.order-details {
+  color: #f5f5dc; /* Custom beige color */
+  padding-left: 6.25rem; /* Tailwind's px-25 */
+  margin-right: 2rem;
+  margin-right: 190px; /* Tailwind's mr-8 */
+}
+
+.order-details p {
+  margin-top: 1.25rem; /* Tailwind's mt-5 */
+}
+
+/* Order summary styling */
+.order-summary {
+  margin-top: 5.625rem; /* Tailwind's mt-[90px] */
+  border-width: 1px; /* Tailwind's border-1 */
+  padding: 2.5rem; /* Tailwind's p-10 */
+  border-radius: 0.5rem; /* Tailwind's rounded-2 */
+  color: #f5f5dc; /* Custom beige color */
+  padding-left: 5rem;
+  border: 1px solid white;
+  margin-right: 60px;
+  margin-bottom: 70px;
+  /* Tailwind's px-20 */
+}
+
+.order-summary h4 {
+  margin-bottom: 1rem; /* Tailwind's mb-4 */
+  font-size: 1.25rem;
+  /* Tailwind's text-xl */
+}
+
+.order-summary p {
+  margin-bottom: 0.5rem;
+  /* Tailwind's mb-2 */
+}
+
+.toplam-success {
+  font-weight: bold;
+  /* Ensuring that 'Toplam' is highlighted */
+}
+@media screen and (max-width: 768px) {
+  /* Ekran daraldığında (mobil cihazlar için) stil değişiklikleri */
+  .title {
+    text-align: center;
+  }
+
+  .order-received {
+    text-align: center;
+  }
+}
